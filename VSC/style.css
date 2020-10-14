@@ -1,0 +1,71 @@
+#title{
+    margin: 30px;
+    margin-top: 20px;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(34, 33, 33);
+    color: whitesmoke;
+}
+.form-group{
+    margin: 30px;
+}
+.button-add{
+    margin-left: 30px;
+    background-color: #4c36af; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+}
+.button-add:active {
+    background-color: #4530a3;
+    box-shadow: 0 3px #666;
+    transform: translateY(3px);
+  }
+.form-inputs{
+    margin-top: 10px;
+    border-radius: 2px;
+}
+#nameInput{
+    width: 12%;
+    padding: 5px 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: none;
+}
+#priceInput{
+    width: 12%;
+    padding: 5px 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: none;
+}
+.card {
+    width: 15%;
+    background-color: rgb(49, 49, 49);
+    margin-left: 30px;
+}
+.card-button{
+    margin-left: 2px;
+    margin-right: 10px;
+    background-color: #4c36af; 
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 4px;
+}
+.card-button:active {
+    background-color: #4530a3;
+    box-shadow: 0 3px #666;
+    transform: translateY(3px);
+  }
