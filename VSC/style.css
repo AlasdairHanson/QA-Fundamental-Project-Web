@@ -47,7 +47,7 @@ body{
     border: none;
 }
 .card {
-    width: 15%;
+    width: 12%;
     background-color: rgb(49, 49, 49);
     margin-left: 30px;
 }
@@ -103,3 +103,12 @@ body{
     box-shadow: 0 3px #666;
     transform: translateY(3px);
   }
+.price-body{
+    width: 50%;
+    background-color: rgb(65, 65, 65);
+    margin-left: 30px;
+    border-radius: 2px;
+}
+.totalDiv{
+    margin-left: 30px;
+}

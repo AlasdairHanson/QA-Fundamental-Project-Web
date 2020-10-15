@@ -1,6 +1,7 @@
 const createForm = document.getElementById("createForm");
 const listOutput = document.getElementById("readDiv");
 const updateCard = document.getElementById("updateForm");
+const priceTotal = document.getElementById("totalPrice");
 
 createForm.addEventListener('submit', function (event){
     event.preventDefault();
@@ -66,10 +67,18 @@ function renderGames() {
                 })
                 cardBody.appendChild(updateButton);
                 
-                //-------------------------------------------------------
+                //Spacer-------------------------------------------------
                 const spacer = document.createElement("br");
                 listOutput.appendChild(spacer);
+
             });
+
+            //Total Price---------------------------------------
+            let total = 0;
+            arrayOfGames.forEach(function(game) {
+                total += game.gamePrice;
+            });
+            priceTotal.innerText = "Total: £" + total;
 
         }).catch(error => console.error(error));
 }
