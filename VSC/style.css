@@ -69,3 +69,37 @@ body{
     box-shadow: 0 3px #666;
     transform: translateY(3px);
   }
+
+.update-card {
+    width: 12%;
+    background-color: rgb(65, 65, 65);
+    margin-left: 30px;
+    border-radius: 2px;
+  }
+.update-input{
+    width: 75%;
+    padding: 2px 10px;
+    margin: 12px;
+    border-radius: 4px;
+    border: none;
+}
+.button-update {
+
+    margin-top: 2px;
+    margin-left: 10px;
+    margin-bottom: 12px;
+    background-color: #4c36af; 
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    border-radius: 4px;
+}
+.button-update:active {
+    background-color: #4530a3;
+    box-shadow: 0 3px #666;
+    transform: translateY(3px);
+  }
