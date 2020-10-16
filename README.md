@@ -2,7 +2,7 @@
 
 ### Resources
 ---
-- Trello: (https://alasdairh.atlassian.net/secure/RapidBoard.jspa?rapidView=7&projectKey=QA&selectedIssue=QA-5)
+- Trello: https://jira.company.com/browse/QA
 
 ### Contents
 ---
@@ -29,8 +29,8 @@ In addition to the brief, I am also required to include:
 To achieve the requirements, I have decided to develop a game wishlist application that must allow the user to do the following:
 
 - Add new games to the wish list with the following information:
-..* Game title
-..* Game price
+  * Game title
+  * Game price
 - View the added games on the web page
 - Update a game's title or price
 - Delete a game from the wish list
