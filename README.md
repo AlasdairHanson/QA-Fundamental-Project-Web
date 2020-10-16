@@ -2,7 +2,8 @@
 
 ### Resources
 ---
-- Trello: https://jira.company.com/browse/QA
+- Presentation: 
+- Trello: https://alasdairh.atlassian.net/secure/RapidBoard.jspa?rapidView=7&projectKey=QA&selectedIssue=QA-5
 
 ### Contents
 ---
@@ -42,5 +43,16 @@ Additionally, I would like the wish list to:
 
 ### Architecture
 ---
+
+
+
+
+### Project Tracking
+---
+
+Jira was used to manage the workflow of the project (pictured below). The link to this board can be found here:
+https://alasdairh.atlassian.net/secure/RapidBoard.jspa?rapidView=7&projectKey=QA&selectedIssue=QA-5
+
+
 
 
