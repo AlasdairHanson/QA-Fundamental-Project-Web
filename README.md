@@ -8,7 +8,7 @@
 ### Contents
 ---
 
-### Breif
+### Brief
 ---
 
 I have been tasked with creating an application that utilises Create, Read, Update and Delete functions in order to demonstrate what I have learned over the last few weeks at the Academy.
@@ -53,7 +53,7 @@ Additionally, I would like the wish list to:
 Jira was used to manage the workflow of the project (pictured below). The link to this board can be found here:
 https://alasdairh.atlassian.net/secure/RapidBoard.jspa?rapidView=7&projectKey=QA&selectedIssue=QA-5
 
-![egg]: (https://github.com/AlasdairHanson/QA-Fundamental-Project-Web/blob/main/Jira%20Board.png)
+!(https://github.com/AlasdairHanson/QA-Fundamental-Project-Web/blob/main/Jira%20Board.png)
 
 The Jira board is based on a Kanban process which helps visualise the state of tasks and how far they are along in development. The flow of tasks goes from left to right, from their point of conception in the backlog, to their completion and implementation. The board contains cards showing different information about what needs to be done and come in various forms:
 
@@ -78,9 +78,9 @@ The Integration tests are used to test the controller by utilising MockMVC to mo
 
 The Unit tests are used to test the service interaction with the database by utilising Mockito to send and compare data to see if it correctly saves in the database.
 
-![egg]: (https://github.com/AlasdairHanson/QA-Fundamental-Project-Web/blob/main/Test%20Coverage.png)
+!(https://github.com/AlasdairHanson/QA-Fundamental-Project-Web/blob/main/Test%20Coverage.png)
 
+### Front-End Design
 
-
- 
+The front-end of the application contains HTML elements and structure that allows the user to have full CRUD functionality in their wish list. The styling built from CSS makes the web page more appealing to look at and easier to navigate.
 
