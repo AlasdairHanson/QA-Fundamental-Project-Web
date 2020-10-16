@@ -53,6 +53,34 @@ Additionally, I would like the wish list to:
 Jira was used to manage the workflow of the project (pictured below). The link to this board can be found here:
 https://alasdairh.atlassian.net/secure/RapidBoard.jspa?rapidView=7&projectKey=QA&selectedIssue=QA-5
 
+![egg]: (https://github.com/AlasdairHanson/QA-Fundamental-Project-Web/blob/main/Jira%20Board.png)
+
+The Jira board is based on a Kanban process which helps visualise the state of tasks and how far they are along in development. The flow of tasks goes from left to right, from their point of conception in the backlog, to their completion and implementation. The board contains cards showing different information about what needs to be done and come in various forms:
+
+* *Epics*
+   A larger body of work that can be broken down into user stories.
+* *User Stories*
+   An abstract element written from the user's point-of-view about what the finished software should achieve. This keeps the development focused around the user.
+* *Tasks*
+   Individual elements of a user story describing what needs to be done to meet it's requirements.
+
+### Risk Assessment
+
+The risk assessment can be found here:
 
 
+### Testing 
+---
+
+Testing was done on the Spring application to verify the CRUD functionality of the back-end without any interaction form the front-end. These included Unit testing with JUnit and Mockito to test individual modules in isolation, and integration tests using MockMVC to test modules when they are combined with other dependencies. These will inform the developer of which tests passed and which tests failed.
+
+The Integration tests are used to test the controller by utilising MockMVC to mock requests that would otherwise be sent from the front-end to the service.
+
+The Unit tests are used to test the service interaction with the database by utilising Mockito to send and compare data to see if it correctly saves in the database.
+
+![egg]: (https://github.com/AlasdairHanson/QA-Fundamental-Project-Web/blob/main/Test%20Coverage.png)
+
+
+
+ 
 
