@@ -53,7 +53,7 @@ Additionally, I would like the wish list to:
 Jira was used to manage the workflow of the project (pictured below). The link to this board can be found here:
 https://alasdairh.atlassian.net/secure/RapidBoard.jspa?rapidView=7&projectKey=QA&selectedIssue=QA-5
 
-[Imgur](https://i.imgur.com/7QuWoOs.png)
+![Imgur](https://i.imgur.com/7QuWoOs.png)
 
 The Jira board is based on a Kanban process which helps visualise the state of tasks and how far they are along in development. The flow of tasks goes from left to right, from their point of conception in the backlog, to their completion and implementation. The board contains cards showing different information about what needs to be done and come in various forms:
 
