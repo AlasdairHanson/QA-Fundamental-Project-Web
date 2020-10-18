@@ -132,29 +132,29 @@ For the Integration Test, we can see apart from the test file itself that the ma
 
 The front-end of the application contains HTML elements in a structure that allows the user to have full CRUD functionality on the web page. The styling built from CSS makes the web page more appealing to look at and easier to navigate.
 
-The interface contains input elements and a button for the user to enter and send the game's details:
-
 ![Imgur](https://i.imgur.com/jsYFhc7.png)
 
-The game is then added to the web page as a card containing the details that the user added, as well as buttons to edit or delete it:
+The interface contains input elements and a button for the user to enter and send the game's details.
 
 ![Imgur](https://i.imgur.com/BF3b3tC.png)
 
-As more games are added, the cards containing them are stacked below each other. We can see the "total" at the top of the first card containing the sum of the prices of each game in the list:
+The game is then added to the web page as a card containing the details that the user added, as well as buttons to edit or delete it.
 
 ![Imgur](https://i.imgur.com/eDU3A3A.png)
 
-We can see that the game "Battlefield 4" was deleted from the wish list as seen previously because the user pressed the delete button on it's card:
+As more games are added, the cards containing them are stacked below each other. We can see the "total" at the top of the first card containing the sum of the prices of each game in the list.
 
 ![Imgur](https://i.imgur.com/vpdYN0F.png)
 
-When the user presses the "Update" button, a new card appears containing input and button elements. In this example, the game "Minecraft" is targeted to be changed to "Battlefield 4" along with a new price:
+We can see that the game "Battlefield 4" was deleted from the wish list as seen previously because the user pressed the delete button on it's card.
 
 ![Imgur](https://i.imgur.com/60UgbHL.png)
 
-Here the update is then executed whent he user presses the "Save Changes" button and the card that used to contain "Minecraft" has now been changed.
+When the user presses the "Update" button, a new card appears containing input and button elements. In this example, the game "Minecraft" is targeted to be changed to "Battlefield 4" along with a new price.
 
 ![Imgur](https://i.imgur.com/J7WY8DZ.png)
+
+Here the update is then executed whent he user presses the "Save Changes" button and the card that used to contain "Minecraft" has now been changed.
 
 ## Known Issues
 ---
