@@ -78,9 +78,38 @@ The Integration tests are used to test the controller by utilising MockMVC to mo
 
 Below is the coverage report for the enitre Spring project broken down into its components:
 
-!(https://github.com/AlasdairHanson/QA-Fundamental-Project-Web/blob/main/Test%20Coverage.png)
+![Imgur](https://i.imgur.com/OzyYvlJ.png)
 
 ### Front-End Design
 
-The front-end of the application contains HTML elements and structure that allows the user to have full CRUD functionality in their wish list. The styling built from CSS makes the web page more appealing to look at and easier to navigate.
+The front-end of the application contains HTML elements in a structure that allows the user to have full CRUD functionality on the web page. The styling built from CSS makes the web page more appealing to look at and easier to navigate.
+
+The interface contains input elements and a button for the user to enter and send the game's details:
+
+![Imgur](https://i.imgur.com/jsYFhc7.png)
+
+The game is then added to the web page as a card containing the details that the user added, as well as buttons to edit or delete it:
+
+![Imgur](https://i.imgur.com/BF3b3tC.png)
+
+As more games are added, the cards containing them are stacked below each other:
+
+![Imgur](https://i.imgur.com/eDU3A3A.png)
+
+We can see that the game "Battlefield 4" was deleted from the wish list as seen previously because the user pressed the delete button on it's card:
+
+![Imgur](https://i.imgur.com/vpdYN0F.png)
+
+When the user presses the "Update" button, a new card appears containing input and button elements. In this example, the game "Minecraft" is targeted to be changed to "Battlefield 4" along with a new price:
+
+![Imgur](https://i.imgur.com/60UgbHL.png)
+
+Here the update is then executed whent he user presses the "Save Changes" button and the card that used to contain "Minecraft" has now been changed.
+
+![Imgur](https://i.imgur.com/J7WY8DZ.png)
+
+### Known Issues
+---
+
+
 
