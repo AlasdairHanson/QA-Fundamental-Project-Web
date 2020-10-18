@@ -12,7 +12,9 @@
    * [Requirements](#requirements)
    * [My Approach](#my-approach)
 * [Architecture](#architecture)
-   * 
+   * [Website](#website)
+   * [Server](#server)
+   * [Database](#database)
 * [Project Tracking](#project-tracking)
 * [Risk Assessment](#risk-assessment)
 * [Testing](#testing)
