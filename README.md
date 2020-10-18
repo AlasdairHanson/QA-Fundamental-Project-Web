@@ -5,7 +5,7 @@
 - Presentation: 
 - Trello: https://alasdairh.atlassian.net/secure/RapidBoard.jspa?rapidView=7&projectKey=QA&selectedIssue=QA-5
 
-### Contents
+## Contents
 ---
 
 * [Brief](#brief)
@@ -21,7 +21,7 @@
 * [Future Improvements](#future-improvements)
 * [Authors](#authors)
 
-### Brief
+## Brief
 ---
 
 I have been tasked with creating an application that utilises Create, Read, Update and Delete functions in order to demonstrate what I have learned over the last few weeks at the Academy.
@@ -54,13 +54,27 @@ Additionally, I would like the wish list to:
 - Display the total cost of all of the existing games in the wish list
 - Display the date and time that each game was added
 
-### Architecture
+## Architecture
 ---
 
+The project is designed to utilise various types of software that makes a web site function. Each peice of software plays a part in how the transfer of data is handled between a website where data is created and viewed, and a database where data is stored and passed back. In this section, I will discuss the various tools that I used for each section and their purpose in the pipeline of client-server communication.
+
+### Website
+
+The website is a structure of HTML (Hyper Text Markup Language) objects that describes how information is presented. The website created in the project utilises HTML objects such as input text boxes and buttons to allow a user to enter information and trigger an action when the button is pressed. Other components, such as dividers and forms, allow objects to be grouped together under a single identifier, so that code which targets the divider applies it to every object inside it.
+
+HTML objects can be styled using CSS (Cascading Style Sheet) that applies a wide range of effects to make the web page more visually appealing. Effects include fonts, colours and animation that changes how objects look and behave. CSS can manipulate a structure that each HTML object has called a Box Model. The Box Model describes an object as a box with attributes such as padding, margin and border which can be individually changed in order to change the object's appearance on the web page.
+
+To add functionality to the web page, JavaScript is utilised. When the website is loaded, the browser creates a Document Object Model (DOM) that captures each HTML element and organises them in a tree structure and defining methods that control them. JavaScript utilises DOM to gain access to the properties, methods and events that control each HTML element, such as updating text inside a paragraph object, or listening and acting on a button press. JavaScript connects with the server using Fetch/Then methods that send HTTP CRUD commands to a server URL, and then act on the information that it gets sent back and manipulating the DOM to display the information.
+
+The project uses Visual Studio Code to create each part of the front-end: an HTML file for the website structure, a CSS file for the styling of the web page, and a JS script containing the JavaScrpit code. VSC has a feature that allows HTML to be run as a "Live Server" that creates the website in real-time as it is saved, allowing for a more streamlined development process.
+
+### Server
 
 
 
-### Project Tracking
+
+## Project Tracking
 ---
 
 Jira was used to manage the workflow of the project (pictured below). The link to this board can be found here:
@@ -77,12 +91,12 @@ The Jira board is based on a Kanban process which helps visualise the state of t
 * *Tasks*
    Individual elements of a user story describing what needs to be done to meet it's requirements.
 
-### Risk Assessment
+## Risk Assessment
 
-The risk assessment can be found here:
+The risk assessment can be found here: https://docs.google.com/spreadsheets/d/1dIfPyBMceQFMduswRlftWzbPgvh1_pTHNQ4t0FssEu4/edit#gid=0
 
 
-### Testing 
+## Testing 
 ---
 
 Testing was done on the Spring application to verify the CRUD functionality of the back-end without any interaction form the front-end. These included Unit testing with JUnit and Mockito to test individual modules in isolation, and integration tests using MockMVC to test modules when they are combined with other dependencies. These will inform the developer of which tests passed and which tests failed.
@@ -93,7 +107,15 @@ Below is the coverage report for the enitre Spring project broken down into its 
 
 ![Imgur](https://i.imgur.com/OzyYvlJ.png)
 
-### Front-End Design
+Below is the test coverage for the Unit Test. We can see that majority of coverage is with the unit test file itself as well as the service file because the unit tests are designed to test how the service handles requests to the database only.
+
+![Imgur](https://i.imgur.com/BjlgX4H.png)
+
+Below is the test coverage for the Integration Test. We can see apart from the test file itself that the majority of execution happens in both the controller and service. This is because the intergation test mocks a HTTP request that is handled by the controller before being passed to the service in order to see how their code is utilised.
+
+![Imgur](https://i.imgur.com/hfmnjL4.png)
+
+## Front-End Design
 ---
 
 The front-end of the application contains HTML elements in a structure that allows the user to have full CRUD functionality on the web page. The styling built from CSS makes the web page more appealing to look at and easier to navigate.
@@ -122,17 +144,17 @@ Here the update is then executed whent he user presses the "Save Changes" button
 
 ![Imgur](https://i.imgur.com/J7WY8DZ.png)
 
-### Known Issues
+## Known Issues
 ---
 
-### Future Improvements
+## Future Improvements
 ---
 
 There are some improvements that I would like to implement:
 
--
+- 
 
-### Authors
+## Authors
 ---
 
 Alasdair Hanson
