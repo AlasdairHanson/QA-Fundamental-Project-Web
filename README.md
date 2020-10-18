@@ -53,7 +53,7 @@ Additionally, I would like the wish list to:
 Jira was used to manage the workflow of the project (pictured below). The link to this board can be found here:
 https://alasdairh.atlassian.net/secure/RapidBoard.jspa?rapidView=7&projectKey=QA&selectedIssue=QA-5
 
-!(https://github.com/AlasdairHanson/QA-Fundamental-Project-Web/blob/main/Jira%20Board.png)
+!(https://imgur.com/7QuWoOs)
 
 The Jira board is based on a Kanban process which helps visualise the state of tasks and how far they are along in development. The flow of tasks goes from left to right, from their point of conception in the backlog, to their completion and implementation. The board contains cards showing different information about what needs to be done and come in various forms:
 
@@ -74,9 +74,9 @@ The risk assessment can be found here:
 
 Testing was done on the Spring application to verify the CRUD functionality of the back-end without any interaction form the front-end. These included Unit testing with JUnit and Mockito to test individual modules in isolation, and integration tests using MockMVC to test modules when they are combined with other dependencies. These will inform the developer of which tests passed and which tests failed.
 
-The Integration tests are used to test the controller by utilising MockMVC to mock requests that would otherwise be sent from the front-end to the service.
+The Integration tests are used to test the controller by utilising MockMVC to mock requests that would otherwise be sent from the front-end to the service. The Unit tests are used to test the service interaction with the database by utilising Mockito to send and compare data to see if it correctly saves in the database.
 
-The Unit tests are used to test the service interaction with the database by utilising Mockito to send and compare data to see if it correctly saves in the database.
+Below is the coverage report for the enitre Spring project broken down into its components:
 
 !(https://github.com/AlasdairHanson/QA-Fundamental-Project-Web/blob/main/Test%20Coverage.png)
 
