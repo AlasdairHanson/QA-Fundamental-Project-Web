@@ -8,6 +8,19 @@
 ### Contents
 ---
 
+* [Brief](#brief)
+   * [Requirements](#requirements)
+   * [My Approach](#my-approach)
+* [Architecture](#architecture)
+   * 
+* [Project Tracking](#project-tracking)
+* [Risk Assessment](#risk-assessment)
+* [Testing](#testing)
+* [Front-End Design](#front-end-design)
+* [Known Issues](#known-issues)
+* [Future Improvements](#future-improvements)
+* [Authors](#authors)
+
 ### Brief
 ---
 
@@ -81,6 +94,7 @@ Below is the coverage report for the enitre Spring project broken down into its 
 ![Imgur](https://i.imgur.com/OzyYvlJ.png)
 
 ### Front-End Design
+---
 
 The front-end of the application contains HTML elements in a structure that allows the user to have full CRUD functionality on the web page. The styling built from CSS makes the web page more appealing to look at and easier to navigate.
 
@@ -92,7 +106,7 @@ The game is then added to the web page as a card containing the details that the
 
 ![Imgur](https://i.imgur.com/BF3b3tC.png)
 
-As more games are added, the cards containing them are stacked below each other:
+As more games are added, the cards containing them are stacked below each other. We can see the "total" at the top of the first card containing the sum of the prices of each game in the list:
 
 ![Imgur](https://i.imgur.com/eDU3A3A.png)
 
@@ -111,5 +125,15 @@ Here the update is then executed whent he user presses the "Save Changes" button
 ### Known Issues
 ---
 
+### Future Improvements
+---
 
+There are some improvements that I would like to implement:
+
+-
+
+### Authors
+---
+
+Alasdair Hanson
 
