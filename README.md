@@ -132,6 +132,7 @@ For the Integration Test, we can see apart from the test file itself that the ma
 
 The front-end of the application contains HTML elements in a structure that allows the user to have full CRUD functionality on the web page. The styling built from CSS makes the web page more appealing to look at and easier to navigate.
 
+
 ![Imgur](https://i.imgur.com/jsYFhc7.png)
 
 The interface contains input elements and a button for the user to enter and send the game's details.
