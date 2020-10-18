@@ -65,14 +65,21 @@ The website is a structure of HTML (Hyper Text Markup Language) objects that des
 
 HTML objects can be styled using CSS (Cascading Style Sheet) that applies a wide range of effects to make the web page more visually appealing. Effects include fonts, colours and animation that changes how objects look and behave. CSS can manipulate a structure that each HTML object has called a Box Model. The Box Model describes an object as a box with attributes such as padding, margin and border which can be individually changed in order to change the object's appearance on the web page.
 
-To add functionality to the web page, JavaScript is utilised. When the website is loaded, the browser creates a Document Object Model (DOM) that captures each HTML element and organises them in a tree structure and defining methods that control them. JavaScript utilises DOM to gain access to the properties, methods and events that control each HTML element, such as updating text inside a paragraph object, or listening and acting on a button press. JavaScript connects with the server using Fetch/Then methods that send HTTP CRUD commands to a server URL, and then act on the information that it gets sent back and manipulating the DOM to display the information.
+To add functionality to the web page, JavaScript is utilised. When the website is loaded, the browser creates a Document Object Model (DOM) that captures each HTML element and organises them in a tree structure and defining methods that control them. JavaScript utilises DOM to gain access to the properties, methods and events that control each HTML element, such as updating text inside a paragraph object, or listening and acting on a button press. JavaScript connects with the server using Fetch/Then methods that send HTTP CRUD commands to a server URL with the user's data sent in a JSON file. It then acts on the information that it gets sent back and manipulates the DOM to display the information.
 
-The project uses Visual Studio Code to create each part of the front-end: an HTML file for the website structure, a CSS file for the styling of the web page, and a JS script containing the JavaScrpit code. VSC has a feature that allows HTML to be run as a "Live Server" that creates the website in real-time as it is saved, allowing for a more streamlined development process.
+The project uses Visual Studio Code to create each part of the front-end: an HTML file for the website structure, a CSS file for the styling of the web page, and a JS script containing the JavaScrpit code. VSC has a feature that allows HTML to be run as a "Live Server" that creates the website in real-time as it is saved, allowing for a more streamlined development process. 
 
 ### Server
 
+The server is created using Spring and is responsible for handling requests to and from the web page and accessing the database. It is divided into a controller layer for handling and routing incoming requests to the correct service, and a service layer that contains methods for manipulating the connected database. The server expects a "game title" and "game price" value in the request body and creates a "Game" object with the values. 
 
+The controller layer defines four methods for handling the different CRUD requests from the web API. Above each method, a CRUD mapping label is added to differentiate what each method does and defines a URL that the web API needs to add to use to correctly send the request to the server. CRUD mapping listens for the type of request coming from the web service by reading the method defined in the requests header. Each controller then calls the method name of the corresponding service and passes on information from the JSON in the request body.
 
+The service layer is responsible for receiving information from the controller and mapping them to a record in a database. Spring utilises a CrudRepository framework for defining access methods to the database based on a different CRUD operation with commands such as save, findAll and findById that performs saving data, finding data, and finding data by a primary key respectively. 
+
+### Database
+
+Spring utilises a framework called JpaRepository that extends a repository interface that initially creates the database and then adds the information sent from the service. The repository takes in the game object and a generated ID to serve as a game's primary key for findById methods of the service layer.
 
 ## Project Tracking
 ---
@@ -95,6 +102,7 @@ The Jira board is based on a Kanban process which helps visualise the state of t
 
 The risk assessment can be found here: https://docs.google.com/spreadsheets/d/1dIfPyBMceQFMduswRlftWzbPgvh1_pTHNQ4t0FssEu4/edit#gid=0
 
+![Imgur](https://i.imgur.com/KuVx35b.png)
 
 ## Testing 
 ---
@@ -103,17 +111,17 @@ Testing was done on the Spring application to verify the CRUD functionality of t
 
 The Integration tests are used to test the controller by utilising MockMVC to mock requests that would otherwise be sent from the front-end to the service. The Unit tests are used to test the service interaction with the database by utilising Mockito to send and compare data to see if it correctly saves in the database.
 
-Below is the coverage report for the enitre Spring project broken down into its components:
-
 ![Imgur](https://i.imgur.com/OzyYvlJ.png)
 
-Below is the test coverage for the Unit Test. We can see that majority of coverage is with the unit test file itself as well as the service file because the unit tests are designed to test how the service handles requests to the database only.
+The report above shows coverage for the enitre Spring project broken down into its components.
 
 ![Imgur](https://i.imgur.com/BjlgX4H.png)
 
-Below is the test coverage for the Integration Test. We can see apart from the test file itself that the majority of execution happens in both the controller and service. This is because the intergation test mocks a HTTP request that is handled by the controller before being passed to the service in order to see how their code is utilised.
+For the Unit Test, we can see that majority of coverage is with the unit test file itself as well as the service file because the unit tests are designed to test how the service handles requests to the database only.
 
 ![Imgur](https://i.imgur.com/hfmnjL4.png)
+
+For the Integration Test, we can see apart from the test file itself that the majority of execution happens in both the controller and service. This is because the intergation test mocks a HTTP request that is handled by the controller before being passed to the service in order to see how their code is utilised.
 
 ## Front-End Design
 ---
