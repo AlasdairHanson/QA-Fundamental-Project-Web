@@ -2,7 +2,7 @@
 
 ### Resources
 ---
-- Presentation: 
+- Presentation: https://docs.google.com/presentation/d/12R2lT8XvUO6oy493f7I_fcXP0ECTgpIrUo1grBTOzD0/edit#slide=id.ga3bad5fd7a_0_87
 - Trello: https://alasdairh.atlassian.net/secure/RapidBoard.jspa?rapidView=7&projectKey=QA&selectedIssue=QA-5
 
 ## Contents
@@ -71,15 +71,17 @@ The project uses Visual Studio Code to create each part of the front-end: an HTM
 
 ### Server
 
-The server is created using Spring and is responsible for handling requests to and from the web page and accessing the database. It is divided into a controller layer for handling and routing incoming requests to the correct service, and a service layer that contains methods for manipulating the connected database. The server expects a "game title" and "game price" value in the request body and creates a "Game" object with the values. 
+The server is created using Spring Boot and is responsible for handling requests to and from the web page and accessing the database. It is divided into a controller layer for handling and routing incoming requests to the correct service, and a service layer that contains methods for manipulating the connected database. The server expects a "game title" and "game price" value in the request body and creates a "Game" object with the values. 
 
-The controller layer defines four methods for handling the different CRUD requests from the web API. Above each method, a CRUD mapping label is added to differentiate what each method does and defines a URL that the web API needs to add to use to correctly send the request to the server. CRUD mapping listens for the type of request coming from the web service by reading the method defined in the requests header. Each controller then calls the method name of the corresponding service and passes on information from the JSON in the request body.
+The controller layer defines four methods for handling the different CRUD requests from the web API. Above each method, a CRUD mapping label is added to differentiate what each method does and defines a URL that the web API needs to add to use to correctly send the request to the server. CRUD mapping listens for the type of request coming from the front-end by reading the method defined in the requests header. Each controller then calls the method name of the corresponding service and passes on information from the JSON in the request body.
 
 The service layer is responsible for receiving information from the controller and mapping them to a record in a database. Spring utilises a CrudRepository framework for defining access methods to the database based on a different CRUD operation with commands such as save, findAll and findById that performs saving data, finding data, and finding data by a primary key respectively. 
 
 ### Database
 
-Spring utilises a framework called JpaRepository that extends a repository interface that initially creates the database and then adds the information sent from the service. The repository takes in the game object and a generated ID to serve as a game's primary key for findById methods of the service layer.
+Spring utilises a framework called JpaRepository that extends a Game repository interface that initially creates the database and then adds the information sent from the service. The repository takes in the game object and a generated ID to serve as a game's primary key for findById methods of the service layer.
+
+The repository uses a Java relational database called H2 that is built-in to Spring Boot for storing the user's data. Unlike other relational databases using MySQL, H2 doesn't require a schema to generate database tables, and instead it implicitly creates and adds records based on the data it is given by the service layer. 
 
 ## Project Tracking
 ---
@@ -155,12 +157,17 @@ Here the update is then executed whent he user presses the "Save Changes" button
 ## Known Issues
 ---
 
+- Game cards on the web page stack downwards instead of to the right for more optimum use of space.
+- Update card appears ar the bottom of the card list instead of beside the card it is updating.
+
 ## Future Improvements
 ---
 
 There are some improvements that I would like to implement:
 
-- 
+- A date and time that each game was added. Automatically updates when an update is done on a game card.
+- Game sorting by title, date or price.
+- Sorting the games by most wanted.
 
 ## Authors
 ---
