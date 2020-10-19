@@ -171,6 +171,7 @@ There are some improvements that I would like to implement:
 - A date and time that each game was added. Automatically updates when an update is done on a game card.
 - Game sorting by title, date or price.
 - Sorting the games by most wanted.
+- An alert telling the user which game was deleted from the wish list for clarity.
 
 ## Authors
 ---
